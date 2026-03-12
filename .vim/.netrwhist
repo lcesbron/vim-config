@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/lcesbron/Documents/projects/cpp09/ex02/src'
+let g:netrw_dirhist_3='/home/lcesbron/Documents/projects/cpp09/ex02'
+let g:netrw_dirhist_2='/home/lcesbron/Documents/projects/cpp09'
+let g:netrw_dirhist_1='/home/lcesbron/.config/vim/.vim/autoload'
+let g:netrw_dirhist_0='/home/lcesbron/.config/vim/.vim'
+let g:netrw_dirhist_9='/home/lcesbron/.config/vim/.vim/swap_files'
+let g:netrw_dirhist_8='/home/lcesbron/.config/vim/.vim'
+let g:netrw_dirhist_7='/home/lcesbron/.config/vim/.vim/backup'
+let g:netrw_dirhist_6='/home/lcesbron/.config/vim/.vim'
+let g:netrw_dirhist_5='/home/lcesbron/.config/vim/.vim/colors'
