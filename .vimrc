@@ -124,6 +124,7 @@ nnoremap <c-l> <c-w>l
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
