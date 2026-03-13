@@ -70,7 +70,7 @@ set wildmode=longest:full,full
 set wildignorecase
 
 " Modern VIM ONLY : vertical wildmode
-" set wildoptions=pum
+set wildoptions=pum
 
 " There are certain files that we would never want to edit with Vim.
 " Wildmenu will ignore files with these extensions.
@@ -112,10 +112,13 @@ nnoremap <silent> <leader> :nohlsearch<CR>
 
 
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-W>J
+nnoremap <c-k> <C-w>k
+nnoremap <c-h> <C-w>h
+nnoremap <c-l> <C-W>l
+
+nnoremap <silent> <leader>d :ALEGoToDefinition<CR>
+nnoremap <silent> <leader>s :ALEHover<CR>
 
 " }}}
 
@@ -125,6 +128,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-vinegar'
+" ALE {{{
+
+let g:ale_completion_enabled=1
+
+Plug 'dense-analysis/ale'
+
+" }}}
 
 call plug#end()
 
