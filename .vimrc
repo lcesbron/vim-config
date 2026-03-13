@@ -100,6 +100,9 @@ set scrolloff=10
 set list
 set listchars=tab:»\ ,trail:␣
 
+let &t_SI = "\e[5 q"  " Vertical bar in insert mode
+let &t_EI = "\e[2 q"  " Block in normal mode
+
 " }}}
 
 " KEYBINDS {{{
@@ -112,13 +115,20 @@ nnoremap <silent> <leader> :nohlsearch<CR>
 
 
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
-nnoremap <c-j> <c-W>J
-nnoremap <c-k> <C-w>k
-nnoremap <c-h> <C-w>h
-nnoremap <c-l> <C-W>l
+nnoremap <c-j> <c-w>J
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+nnoremap \ <c-w>v
 
+" LSP
 nnoremap <silent> <leader>d :ALEGoToDefinition<CR>
 nnoremap <silent> <leader>s :ALEHover<CR>
+
+" FZF
+nnoremap <silent> <leader>sf :Files<CR>
+nnoremap <silent> <leader><leader> :Buffers<CR>
+nnoremap <silent> <leader>sl :Lines<CR>
 
 " }}}
 
@@ -126,14 +136,33 @@ nnoremap <silent> <leader>s :ALEHover<CR>
 
 call plug#begin('~/.vim/plugged')
 
+" Gruvbox Theme
 Plug 'morhetz/gruvbox'
+
+" Status Line
 Plug 'vim-airline/vim-airline'
+
+" Better file explorer
 Plug 'tpope/vim-vinegar'
-" ALE {{{
+
+" Git diffs
+Plug 'airblade/vim-gitgutter'
+
+" Language colors
+" If problems with indentation check troubleshooting page on github
+Plug 'sheerun/vim-polyglot'
+
+" Linter & LSP {{{
 
 let g:ale_completion_enabled=1
 
 Plug 'dense-analysis/ale'
+
+" }}}
+
+" Fuzzy Finder {{{
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " }}}
 
