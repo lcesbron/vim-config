@@ -130,6 +130,9 @@ nnoremap <silent> <leader>sf :Files<CR>
 nnoremap <silent> <leader><leader> :Buffers<CR>
 nnoremap <silent> <leader>sl :Lines<CR>
 
+" NERD TREE
+nnoremap <silent> <leader>e :NERDTreeToggle<CR>
+
 " }}}
 
 " PLUGINS {{{
@@ -165,6 +168,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " }}}
+
+" NERD Tree
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
