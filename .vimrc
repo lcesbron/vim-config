@@ -124,6 +124,7 @@ nnoremap \ <c-w>v
 " LSP
 nnoremap <silent> <leader>d :ALEGoToDefinition<CR>
 nnoremap <silent> <leader>s :ALEHover<CR>
+nnoremap <silent> <leader>i :ALEDetail<CR>
 
 " FZF
 nnoremap <silent> <leader>sf :Files<CR>
