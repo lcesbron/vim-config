@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/lcesbron/Documents/projects/cpp09'
 let g:netrw_dirhist_4='/home/leopold/.config/vim'
 let g:netrw_dirhist_3='/home/leopold/42/cpp09/ex02/include'
 let g:netrw_dirhist_2='/home/leopold/42/cpp09/ex02'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_9='/home/leopold/42/cpp09'
 let g:netrw_dirhist_8='/home/leopold/42/cpp09/ex02'
 let g:netrw_dirhist_7='/home/leopold/42/cpp09/ex02/include'
 let g:netrw_dirhist_6='/home/leopold/42/cpp09/ex02'
-let g:netrw_dirhist_5='/home/leopold/42/cpp09'

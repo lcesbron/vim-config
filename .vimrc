@@ -129,6 +129,7 @@ nnoremap <silent> <leader>s :ALEHover<CR>
 nnoremap <silent> <leader>sf :Files<CR>
 nnoremap <silent> <leader><leader> :Buffers<CR>
 nnoremap <silent> <leader>sl :Lines<CR>
+nnoremap <silent> <leader>sg :Rg<Cr>
 
 " NERD TREE
 nnoremap <silent> <leader>e :NERDTreeToggle<CR>
@@ -141,6 +142,9 @@ call plug#begin('~/.vim/plugged')
 
 " Gruvbox Theme
 Plug 'morhetz/gruvbox'
+
+" Auto pairs
+Plug 'jiangmiao/auto-pairs'
 
 " Status Line
 Plug 'vim-airline/vim-airline'
@@ -169,8 +173,12 @@ Plug 'junegunn/fzf.vim'
 
 " }}}
 
-" NERD Tree
+" NERD Tree {{{
 Plug 'preservim/nerdtree'
+
+let NERDTreeShowHidden=1
+
+" }}}
 
 call plug#end()
 
