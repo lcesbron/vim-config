@@ -121,6 +121,10 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap \ <c-w>v
 
+" delete a buffer without deleting the window
+
+nnoremap <leader>bd :bp<bar>sp<bar>bn<bar>bd<CR>
+
 " LSP
 nnoremap <silent> <leader>d :ALEGoToDefinition<CR>
 nnoremap <silent> <leader>s :ALEHover<CR>
